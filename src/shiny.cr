@@ -32,11 +32,11 @@ module Shiny
           @bottomLeft = "╰"
           @bottomRight = "╯"
         end
-    end
 
-    def render
-
-    end
+        if @width.odd?
+          @width += 1
+        end
+   end
 
     def render(content : Renderable? = nil)
 
