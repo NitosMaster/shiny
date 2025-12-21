@@ -1,6 +1,6 @@
 # shiny
 
-TODO: Write a description here
+A tool for the crystal programming language for aesthetic and functional TUIs
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      shiny:
-       github: your-github-user/shiny
+       github: NitosMaster/shiny
    ```
 
 2. Run `shards install`
@@ -28,12 +28,12 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/shiny/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+1. Fork it (<https://github.com/NitosMaster/shiny/fork>)
+2. Create your feature branch (`git checkout -b my-new-mart`)
+3. Commit your changes (`git commit -am 'mart'`)
+4. Push to the branch (`git push origin my-new-mart`)
 5. Create a new Pull Request
 
 ## Contributors
 
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+- [NitosMaster](https://github.com/NitosMaster) - creator and maintainer
