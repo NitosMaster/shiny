@@ -3,7 +3,22 @@ module Shiny
   VERSION = "0.1.0"
 
   module Renderable
+    abstract def render : Array(String)
+  end
 
+  class Text
+    include Shiny::Renderable
+
+    def initialize(@lines : Array(String))
+    end
+
+    def render : Array(String)
+      @lines
+    end
+
+    #def render : Array(String)
+      #[@content]
+    #end
   end
 
   class Panel
@@ -41,40 +56,44 @@ module Shiny
           @bottomRight = "╯"
         end
 
-        if @width.odd?
-          @width += 1
-        end
+        #if @width.odd?
+          #@width += 1
+        #end
    end
 
-    def render(content : Renderable? = nil)
+    def render(content : Renderable)
 
+      lines = content.render
       head = " #{@title} "
  # thats ↑ what she said
       remaining = @width - 2 - head.size
       leftPad = remaining / 2
       rightPad = remaining - leftPad
 
-      if content == nil
-        print rgb_to_ansi(@color)
-        print @topLeft
-        if !@title.empty?
-          print @top * leftPad.to_i
-          print head
-          print @top * rightPad.to_i
-        else
-          print @top * (@width - 2)
-        end
-        puts @topRight
-        (@height - 2).times do
-          print @side
-          print " " * (@width -2)
-          puts @side
-        end
-        print @bottomLeft
+      print rgb_to_ansi(@color)
+      print @topLeft
+      if !@title.empty?
+        print @top * leftPad.to_i
+        print head
+        print @top * rightPad.to_i
+      else
         print @top * (@width - 2)
-        puts @bottomRight
-        print "\e[0m"
       end
+      puts @topRight
+      (@height - 2).times do |i|
+        print @side
+        if i < lines.size
+          line = lines[i][0...(@width - 2)].ljust(@width - 2)
+          print line
+        else
+          print " " * (@width -2)
+        end
+        puts @side
+      end
+      print @bottomLeft
+      print @top * (@width - 2)
+      puts @bottomRight
+      print "\e[0m"
     end
   end
 end

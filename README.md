@@ -19,12 +19,24 @@ A tool for the crystal programming language for aesthetic and functional TUIs
 ```crystal
 require "shiny"
 
+<<<<<<< HEAD
 # To use panels
 mart = Shiny::Panel.new(height: 10, width: 20, color: "#b00b69", title: "Example Panel")
 mart.render()
 ```
 
 TODO: Write more usage instructions here
+=======
+# Panels
+
+text = Shiny::Text.new(["This", "Is", "My", "Very", "Own", "Panel!"])
+
+panel = Shiny::Panel.new(height: 8,title: "Mart", color: "#")
+panel.render(text)
+```
+
+TODO: Docs
+>>>>>>> fe2abe0 (Text in Panels)
 
 ## Contributing
 
