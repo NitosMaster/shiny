@@ -23,7 +23,7 @@ rgb = gets.to_s.chomp # ANSI Color through input
 
 titlecard = Shiny::FigletText.new("MART", "Big Money-nw", "/usr/share/figlet/fonts/") # .flf Fonts for app titles
 text = Shiny::Text.new(["mart", "test"]) # Text, for paragraphs add new str to array
-panel = Shiny::Panel.new(height: 30, title: "test", color: rgb) # Panel, kinda like Rich
+panel = Shiny::Panel.new(height: 30, title: "test", color: rgb, border: "round") # Panel, kinda like Rich
 
 panel.render(text)
 panel.render(titlecard)
