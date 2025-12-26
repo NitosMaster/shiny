@@ -15,10 +15,26 @@ module Shiny
     def render : Array(String)
       @lines
     end
+  end
 
-    #def render : Array(String)
-      #[@content]
-    #end
+  def figlet(text : String, font : String = "standard") : Array(String)
+  	result = `figlet -f "#{font}" "#{text}"`.strip
+  	result.split("\n")
+	end
+
+	class FigletText
+  	include Shiny::Renderable
+
+  	def initialize(@text : String, @font : String = "Big Money-nw", @font_dir : String = "usr/share/figlet/fonts/")
+  	end
+
+  	def render : Array(String)
+      if dir = @font_dir
+        `figlet -d "#{dir}" -f "#{@font}" "#{@text}"`.strip.split("\n")
+      else
+    	  `figlet -f "#{@font}" "#{@text}"`.strip.split("\n")
+  	  end
+	  end
   end
 
   class Panel
@@ -55,6 +71,51 @@ module Shiny
           @bottomLeft = "╰"
           @bottomRight = "╯"
         end
+
+        if @border == "square"
+          @side = "│"
+          @top = "─"
+          @topLeft = "┌"
+          @topRight = "┐"
+          @bottomLeft = "└"
+          @bottomRight = "┘"
+        end
+
+        if @border == "double"
+          @side = "║"
+          @top = "═"
+          @topLeft = "╔"
+          @topRight = "╗"
+          @bottomLeft = "╚"
+          @bottomRight = "╝"
+        end
+
+       if @border == "bold"
+          @side = "┃"
+          @top = "━"
+          @topLeft = "┏"
+          @topRight = "┓"
+          @bottomLeft = "┗"
+          @bottomRight = "┛"
+        end
+
+        if @border == "dashed"
+          @side = "┆"
+          @top = "┄"
+          @topLeft = "┌"
+          @topRight = "┐"
+          @bottomLeft = "└"
+          @bottomRight = "┘"
+        end
+
+        if @border == "ascii"
+          @side = "|"
+          @top = "-"
+ 				  @topLeft = "+"
+ 				  @topRight = "+"
+				  @bottomLeft = "+"
+  				@bottomRight = "+"
+				end
 
         #if @width.odd?
           #@width += 1
