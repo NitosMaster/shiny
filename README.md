@@ -96,15 +96,15 @@ FFFFFF
 ```
 TODO: Docs
 
-## Features and Future
+# Features and Future
 
-# Features
+## Features
 * Beautiful rich python inspired panels;
 * ANSI rgb;
 * Figlet support to leave your users flabbergasted;
 * And simple!
 
-# Future
+## Future
 * Refreshable panels to run games, menus, inputs and more;
 * Image to ASCII;
 * Progress bars;
