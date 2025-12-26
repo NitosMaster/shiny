@@ -96,6 +96,20 @@ FFFFFF
 ```
 TODO: Docs
 
+## Features and Future
+
+# Features
+* Beautiful rich python inspired panels;
+* ANSI rgb;
+* Figlet support to leave your users flabbergasted;
+* And simple!
+
+# Future
+* Refreshable panels to run games, menus, inputs and more;
+* Image to ASCII;
+* Progress bars;
+* And whatever you suggest!
+
 ## Contributing
 
 1. Fork it (<https://github.com/NitosMaster/shiny/fork>)
