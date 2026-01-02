@@ -90,6 +90,7 @@ TODO: Docs
 * Refining of refreshable panels;
 * Progress bars;
 * Image to ASCII;
+* File trees;
 * And whatever you suggest!
 
 # Contributing
@@ -102,4 +103,4 @@ TODO: Docs
 
 # Contributors
 
-- [NitosMaster](https://github.com/NitosMaster) - creator and maintainer (all alone :( )
+- [NitosMaster](https://github.com/NitosMaster) - creator and maintainer, all alone :(
