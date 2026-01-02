@@ -35,7 +35,8 @@ panel = Shiny::Panel.new(height: 10, title: "test", color: hex, border: "round")
 panel.render(text) # Render simple text
 panel.render(titlecard) # Render .flf
 
-panel.put(19, 4, "(•✓•)", "#C500FF") # Adds str to buffer                                                       panel.put(3, 4, "cute lil guy -> ", "#C500FF") # x, y, str, color
+panel.put(19, 4, "(•✓•)", "#C500FF") # Adds str to buffer
+panel.put(3, 4, "cute lil guy -> ", "#C500FF") # x, y, str, color
 
 panel.renderBuffer # Renders buffer
 ```
