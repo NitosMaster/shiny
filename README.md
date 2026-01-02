@@ -82,22 +82,23 @@ TODO: Docs
 * Beautiful rich python inspired panels;
 * ANSI rgb;
 * Figlet support to leave your users flabbergasted;
+* Refreshable panels to run full games, animations and everything you desire in a panel;
 * And simple!
 
 ## Future
-* Refreshable panels to run games, menus, inputs and more;
-* Image to ASCII;
+* Refining of refreshable panels;
 * Progress bars;
+* Image to ASCII;
 * And whatever you suggest!
 
 # Contributing
 
 1. Fork it (<https://github.com/NitosMaster/shiny/fork>)
-2. Create your feature branch (`git checkout -b my-new-mart`)
-3. Commit your changes (`git commit -am 'mart'`)
-4. Push to the branch (`git push origin my-new-mart`)
+2. Create your feature branch (`git checkout -b my-new-branch`)
+3. Commit your changes (`git commit -am 'First commit <3'`)
+4. Push to the branch (`git push origin my-new-branch`)
 5. Create a new Pull Request
 
 # Contributors
 
-- [NitosMaster](https://github.com/NitosMaster) - creator and maintainer
+- [NitosMaster](https://github.com/NitosMaster) - creator and maintainer (all alone :( )
