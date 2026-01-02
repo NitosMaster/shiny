@@ -43,7 +43,9 @@ panel.renderBuffer # Renders buffer
 ```bash
 # Example output
 crystal run test.cr
-╭──────────────────────── test ────────────────────────╮│shiny                                                 ││is                                                    │
+╭──────────────────────── test ────────────────────────╮
+│shiny                                                 │
+│is                                                    │
 │AWESOME                                               │
 │                                                      │
 │                                                      │
