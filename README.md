@@ -101,6 +101,16 @@ TODO: Docs
 4. Push to the branch (`git push origin my-new-branch`)
 5. Create a new Pull Request
 
+## Star History
+
+<a href="https://www.star-history.com/#willmcgugan/rich&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=willmcgugan/rich&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=willmcgugan/rich&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=willmcgugan/rich&type=date&legend=top-left" />
+ </picture>
+</a>
+
 # Contributors
 
 - [NitosMaster](https://github.com/NitosMaster) - creator and maintainer, all alone :(
