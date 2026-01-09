@@ -20,11 +20,11 @@ module Shiny
   class FigletText
     include Shiny::Renderable
 
-    def initialize(@text : String, @font : String = "Big Money-nw", @font_dir : String = "/usr/share/figlet/fonts/")
+    def initialize(@text : String, @font : String = "Big Money-nw", @fontDir : String = "/usr/share/figlet/fonts/")
     end
 
     def render : Array(String)
-      if dir = @font_dir
+      if dir = @fontDir
         `figlet -d "#{dir}" -f "#{@font}" "#{@text}"`.strip.split("\n")
       else
         `figlet -f "#{@font}" "#{@text}"`.strip.split("\n")
@@ -64,6 +64,15 @@ module Shiny
       r, g, b = hex_to_rgb(hex)
       "\e[38;2;#{r};#{g};#{b}m"
     end
+
+		def clearBuffer
+  		@buffer.each do |row|
+    		row.each do |cell|
+      		cell.char = " "
+      		cell.color = "#FFFFFF"
+    		end
+  		end
+		end
 
     def initialize(width : Int32? = nil, @height = 10, @border = "round", @color = "#FFFFFF", @title = "")
       @width = width || `tput cols`.to_i rescue 80
