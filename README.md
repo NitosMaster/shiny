@@ -77,21 +77,12 @@ $ crystal run example.cr
 ```
 TODO: Docs
 
-# Features and Future
-
-## Features
+# Features
 * Beautiful rich python inspired panels;
 * ANSI rgb;
 * Figlet support to leave your users flabbergasted;
 * Refreshable panels to run full games, animations and everything you desire in a panel;
 * And simple!
-
-## Future
-* Refining of refreshable panels;
-* Progress bars;
-* Image to ASCII;
-* File trees;
-* And whatever you suggest!
 
 # Contributing
 
